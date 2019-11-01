@@ -3,6 +3,9 @@
 <html>
   <head>
     <title>Add an entryr</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="static/css/style.css">
   </head>
   <body>
     <h1>Edit Entry for {{user}}</h1>
@@ -16,7 +19,7 @@
         <textarea type = "text" rows = "8" cols = "100" form = "Eentry" name = "entry">{{oldContent}}</textarea>
         <br>
 	<input type = "hidden" name = postID value = {{postID}}>
-	       
+
         <input type = "submit" value = "Edit Entry">
     </form>
     <form action = "/profile">

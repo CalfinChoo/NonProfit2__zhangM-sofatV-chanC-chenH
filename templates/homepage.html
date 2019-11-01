@@ -3,6 +3,9 @@
 <html>
   <head>
     <title>Homepage</title>
+    <link rel="stylesheet"
+          type="text/css"
+          href="static/css/style.css">
   </head>
   <body>
   {% with messages = get_flashed_messages() %}
@@ -11,7 +14,7 @@
         {{message}}
       {% endfor %}
     {% endif %}
-  {% endwith %}    
+  {% endwith %}
   Welcome {{user}}!
   <br>
   <form action = "/profile">
